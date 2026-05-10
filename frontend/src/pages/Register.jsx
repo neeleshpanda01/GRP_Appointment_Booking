@@ -21,4 +21,5 @@ export default function Register() {
       <button onClick={submit}>Register</button>
     </div>
   );
+  const temp = 1;
 }

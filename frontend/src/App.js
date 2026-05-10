@@ -1,14 +1,12 @@
-import React from "react";
-import "./App.css";
-import Booking from "./pages/Booking";
+import Doctors from "./pages/Doctors";
+import Admin from "./pages/Admin";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hospital Appointment Booking</h1>
-
-      {/* Booking Page */}
-      <Booking />
+    <div>
+      <h1>Hospital System</h1>
+      <Doctors />
+      <Admin />
     </div>
   );
 }

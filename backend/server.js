@@ -27,16 +27,7 @@ app.get("/api/health", (req, res) => {
 // API Routes
 app.use("/api", require("./routes"));
 
-// Serve frontend static files in production
-if (process.env.NODE_ENV === "production") {
-  const frontendPath = path.join(__dirname, "../frontend/build");
-  app.use(express.static(frontendPath));
-  
-  // Catch-all route for React Router
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(frontendPath, "index.html"));
-  });
-}
+
 
 // Error handling middleware
 app.use((err, req, res, next) => {
